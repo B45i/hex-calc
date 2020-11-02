@@ -13,6 +13,7 @@
             type="text"
             class="form-control"
             id="decimal"
+            placeholder="Decimal number"
             [ngClass]="{ 'is-invalid': invalidDeci }"
           />
         </div>
@@ -25,6 +26,7 @@
             type="text"
             class="form-control"
             id="hex"
+            placeholder="Hex number"
             [ngClass]="{ 'is-invalid': invalidHex }"
           />
         </div>
@@ -37,10 +39,13 @@
             type="text"
             class="form-control"
             id="bin"
+            placeholder="Binary number"
             [ngClass]="{ 'is-invalid': invalidBin }"
           />
         </div>
       </div>
     </div>
   </form>
+
+  <app-bin-display [bin]="calcForm.value.bin"></app-bin-display>
 </div>
