@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "hex-calc"
+    }
+  },
+  "defaultProject": "hex-calc",
+  "cli": {
+    "analytics": false
+  }
 }
